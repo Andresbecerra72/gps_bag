@@ -40,7 +40,7 @@
 
 
 body {
-    background-color: #F4F4B8;
+    background-color: #FFFFFF;
   }
 
 
@@ -60,10 +60,17 @@ body {
 
   .nav_bar li a {
       color: black;
-      font-size: 1.5rem;
       font-weight: lighter;
+      font-size: 1.5rem;
       text-decoration: none;
   }
+
+
+.active {
+    background-color: #F4DBB8;
+    padding: 5px;
+}
+
 
 .color-brown {
     color: brown;
@@ -73,7 +80,33 @@ body {
 }
 
 
-.display-1 { 
+.bg-brown-light {
+    background-color: #F4DBB8;
+}
+
+
+.text-sub {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.text-sub-p {
+    font-weight: lighter;
+    font-size: 20px;
+
+}
+
+.text-form {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.text-brand { 
     font-family: 'distro';
+    font-size: 60px;
  } 
+
 
