@@ -1,0 +1,79 @@
+
+
+
+@font-face {
+    font-family: 'distro';
+    src: url(DISTROB_.ttf);
+}
+
+@font-face {
+    font-family: 'tootall';
+    src: url(Tootall.ttf);
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+   
+	}
+
+
+    ul,
+    ol {
+        list-style: none;
+    }
+    
+    a:visited,
+    a:link,
+    a:focus,
+    a:hover,
+    a:active {
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+
+
+body {
+    background-color: #F4F4B8;
+  }
+
+
+
+  .nav_bar {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav_bar li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .nav_bar li a {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: lighter;
+      text-decoration: none;
+  }
+
+.color-brown {
+    color: brown;
+}
+.color-brown-light {
+    color: rgb(197, 114, 6);
+}
+
+
+.display-1 { 
+    font-family: 'distro';
+ } 
+
