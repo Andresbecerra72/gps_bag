@@ -36,6 +36,8 @@
 <br>
 
 
+<!-- CONTENEDOR -->
+
 <div class="container">
 
   <div class="row">
@@ -45,28 +47,37 @@
       <br>
       <h4 class="text-form mt-2">Contactanos</h4>
 
-      <form class="text-center p-5 mt-3">
+      <form id="forma_contacto" class="text-center p-5 mt-3" onsubmit="setContacto(event)">
 
 
-       <div class="form-row mb-3 w-75">
-          <input type="text" class="form-control" placeholder="Nombre">
+       <div class="row mb-3">
+         <div class="col">
+           <input type="text"  name="nombre" class="form-control" placeholder="Nombre" required>
+         </div>
         </div>
-        <div class="form-row mb-3 w-75">
-          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo"> s
+        <div class="row mb-3">
+          <div class="col">
+            <input type="email" name="correo" class="form-control" aria-describedby="emailHelp" placeholder="Correo" required> 
+          </div>
         </div>
-        <div class="form-row mb-3 w-75">
-          <textarea class="form-control" rows="5" cols="5" placeholder="Mensaje"></textarea>
+        <div class="row mb-3">
+          <div class="col">
+            <textarea class="form-control" rows="5" cols="5" placeholder="Mensaje"></textarea>
+          </div>
         </div>
       
         <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar</button>
       </form>
+
+       <!-- MENSAJE -->
+       <span id="text_mensaje" class="text-form m-3"></span>
 
       <br>
       <br>
 
     </div>
     <div class="col-6 p-0 m-0" style="background-image: url(./assets/images/img-5.png); background-repeat: no-repeat; background-size: cover; height: auto;">
-      <!-- <img  class="img-fluid" src="./assets/images/img-4.png" alt=""> -->
+    
     </div>
   </div>
 

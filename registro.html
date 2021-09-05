@@ -34,28 +34,41 @@
 
 <br>
 <br>
+<!-- CONTENEDOR -->
 
    <div class="container">
+
+    <!-- REGISTRO -->
      <div class="row">
        <div class="col"></div>
-       <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-lx-4 text-center bg-brown-light p-5">
-         <h3 class="fw-light">Registro</h3>
+       <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 text-center bg-brown-light p-5">
+         <h3 id="text_titulo" class="fw-light">Registro</h3>
          <br>
-         <form>
-          <div class="form-row mb-3">
-            <input type="text" class="form-control" placeholder="Nombre">
+         <form id="forma_registro" onsubmit="setRegistro(event)">
+          <div class="row mb-3">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6 mb-3">
+              <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-lx-6">
+              <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+            </div>
+          
           </div>
-          <div class="form-row mb-3">
-            <input type="text" class="form-control" placeholder="Apellido">
+        
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" name="correo" class="form-control" placeholder="Correo">
+            </div>
           </div>
-          <div class="form-row mb-3">
-            <input type="text" class="form-control" placeholder="Correo">
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" name="telefono" class="form-control" placeholder="Telefono">
+            </div>
           </div>
-          <div class="form-row mb-3">
-            <input type="text" class="form-control" placeholder="Telefono">
-          </div>
-          <div class="form-row mb-3">
-            <input type="text" class="form-control" placeholder="Dirección">
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" name="direccion" class="form-control" placeholder="Dirección">
+            </div>
           </div>
 
 
@@ -63,10 +76,23 @@
 
 
          </form>
+
+          <!-- MENSAJE -->
+         <span id="text_nombre"></span>
+
+
        </div>
        <div class="col"></div>
+
+ 
      </div>
+
+
    </div>
+
+   <br>
+   <br>
+   <br>
 
         <script src="./assets/js/main.js"></script>
 </body>
